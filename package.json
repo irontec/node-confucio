@@ -1,0 +1,63 @@
+{
+  "name": "confucio",
+  "version": "1.0.0",
+  "description": "Node.js configuration module. Uses nconf under the hood.",
+  "keywords": "config, nconf, etc, env, environment, args, argv",
+  "homepage": "https://github.com/irontec/node-confucio",
+  "bugs": {
+    "url": "https://github.com/irontec/node-confucio/issues",
+    "email": "internet@irontec.com"
+  },
+  "license": "EUPL-1.1",
+  "author": {
+    "name": "Irontec SL",
+    "email": "internet@irontec.com",
+    "url": "https://www.irontec.com/"
+  },
+  "contributors": {
+    "name": "Aitor Llamas Jiménez",
+    "email": "aitorllj93@gmail.com",
+    "url": "https://github.com/aitorllj93"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "README.md",
+    "package.json"
+  ],
+  "main": "index.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/irontec/node-confucio.git"
+  },
+  "scripts": {
+    "test": "npm run lint",
+    "clean": "rm -fr node_modules",
+    "lint": "node_modules/eslint/bin/eslint.js lib"
+  },
+  "dependencies": {
+    "ini": "^1.3.4",
+    "nconf": "^0.8.2"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.1.5",
+    "eslint": "^1.10.3"
+  },
+  "engines": {
+    "node": ">=0.12"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "node": true
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
